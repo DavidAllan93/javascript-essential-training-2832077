@@ -16,8 +16,27 @@ const deskArray = [
   "headphones",
   "lightbulb",
   "usb drive",
+  5,
+  true,
+  "headlamp",
 ];
+
 console.log("Original array:", deskArray);
+
+deskArray.pop();
+console.log("New array:", deskArray);
+
+deskArray.unshift(deskArray.pop());
+console.log("Last item now first:", deskArray);
+
+deskArray.sort();
+console.log("Sorted:", deskArray);
+
+const foundItem = deskArray.find((item) => item === "notebook");
+console.log("Found item:", foundItem);
+
+let remove = "notebook";
+deskArray.splice(deskArray.indexOf(remove))
 
 // Remove the last item:
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop

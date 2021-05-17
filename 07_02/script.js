@@ -4,7 +4,12 @@
  */
 
 let item = "flashlight";
+let figure = "batman";
 
-const collection = ["Piggy", item, 5, true];
+const collection = ["Piggy", item, 5, true, figure];
+
+collection[collection.length] = "Hello";
+collection[9] = "at the end";
+collection[2] = "camera";
 
 console.log(collection);
